@@ -29,8 +29,7 @@ router.put("/api/burgers/:id", function (req, res) {
          devourParm: "devoured" 
     };
 
-    burger.update(cols,
-        [data, id], (result) => {
+    burger.update(cols, [data, id], (result) => {
             res.json({ id: result.affectedRows });
         })
 });
