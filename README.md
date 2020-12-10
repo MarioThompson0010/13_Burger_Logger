@@ -18,9 +18,10 @@ The program uses a SQL database to store persistent information.  The user inter
 
 ## How to run the program:
 
-You can go to Heroku () and run it that way, or follow the following steps to run it on your local machine:
+You can go to Heroku (see the link, above) and run it that way, or follow the following steps to run it on your local machine:
 
-1) Open an integrated terminal in the directory of the server.js file
+1) Open an integrated terminal in the root directory of your project, but it should be the same directory where the
+    server.js file lies
 2) Type "npm i" to install the dependencies
 3) Type "node server.js"
 4) Enter the name of a burger you want to eat
