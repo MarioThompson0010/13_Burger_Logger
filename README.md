@@ -1,7 +1,7 @@
 # 13_Burger_Logger
 
 ## Link to video and Screenshots:
-[Video of Burger Logger](https://drive.google.com/file/d/1gQuUGL_2onv9lux4NmtJIGLdDEPiNrlb/view?usp=sharing)
+[Try out the Burger Logger](https://intense-wildwood-42940.herokuapp.com/)
 
 ![Before Burger Being Devoured](https://github.com/MarioThompson0010/13_Burger_Logger/blob/main/screenshots/screenshot1.PNG)
 ![After Burger Being Devoured](https://github.com/MarioThompson0010/13_Burger_Logger/blob/main/screenshots/afterBeingDevoured.PNG)
