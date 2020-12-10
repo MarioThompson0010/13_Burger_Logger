@@ -3,8 +3,8 @@
 ## Link to video and Screenshots:
 [Video of Burger Logger](https://drive.google.com/file/d/1gQuUGL_2onv9lux4NmtJIGLdDEPiNrlb/view?usp=sharing)
 
-![Before Burger Being Devoured](https://github.com/MarioThompson0010/12_Employee_Tracker/blob/main/Screenshots/Screenshot1.PNG)
-![After Burger Being Devoured](https://github.com/MarioThompson0010/12_Employee_Tracker/blob/main/Screenshots/Screenshot2.PNG)
+![Before Burger Being Devoured](https://github.com/MarioThompson0010/13_Burger_Logger/blob/main/screenshots/screenshot1.PNG)
+![After Burger Being Devoured](https://github.com/MarioThompson0010/13_Burger_Logger/blob/main/screenshots/afterBeingDevoured.PNG)
 
 List of technologies used: npm, inquirer, Javascript, Nodejs, Mysql
 
