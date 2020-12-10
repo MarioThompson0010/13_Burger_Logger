@@ -7,7 +7,6 @@ $(function () {
 
         const newBurger = {
             name: $("#burg").val().trim()
-            //sleepy: $("[name=sleepy]:checked").val().trim()
         };
 
         // Send the POST request.
@@ -27,7 +26,7 @@ $(function () {
         event.preventDefault();
 
         const id = $(this).data("id");
-        const devour = 1; //1 for true $(this).data("devoured");
+        const devour = 1; //1 for true
     
         const consumed = {
             devoured : devour
@@ -41,5 +40,4 @@ $(function () {
             location.reload();
         });
     });
-
 });
