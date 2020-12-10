@@ -1,3 +1,4 @@
+// models lies between the ORM and the controller
 const orm = require("../config/orm.js");
 
 let burger = {

@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const burger = require("../models/burger.js");
 
+// Every web page needs a root
 router.get("/", function (req, res) {
     burger.all(function (data) {
         var hbsObject = {
@@ -14,6 +15,7 @@ router.get("/", function (req, res) {
 
 });
 
+// create a burger
 router.post("/api/burgers", function (req, res) {
     burger.create(["burger_name"], [req.body.name], function (result) {
         res.json({ id: result.insertId });
@@ -21,6 +23,7 @@ router.post("/api/burgers", function (req, res) {
 
 });
 
+// update a burger by devouring it
 router.put("/api/burgers/:id", function (req, res) {
     const id = req.params.id;
     const data = req.body.devoured;

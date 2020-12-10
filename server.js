@@ -1,10 +1,10 @@
-const express = require("express");
+const express = require("express"); //enables routing
 
 var PORT = process.env.PORT || 8080;
 
 var app = express();
 
-app.use(express.static("public"));
+app.use(express.static("public")); // let's us have script in a separate file
 
 // Parse application body as JSON
 app.use(express.urlencoded({ extended: true }));

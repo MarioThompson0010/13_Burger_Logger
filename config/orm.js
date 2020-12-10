@@ -1,7 +1,8 @@
-const { query } = require("express");
+//const { query } = require("express");
 var connection = require("../config/connection.js");
 
 let orm = {
+    // see all burgers
     selectAll: function (tableInput, cb) {
         let queryString = "SELECT * FROM " + tableInput + ";";
         connection.query(queryString, function (err, result) {
@@ -10,6 +11,7 @@ let orm = {
         });
     },
 
+    // add a new burger
     insertOne: function (table, cols, vals, cb) {
 
         let queryString = "INSERT INTO " + table;
@@ -33,11 +35,10 @@ let orm = {
             }
 
             cb(result);
-
         });
     },
 
-
+    // devour the burger
     updateOne: function (table, objColVals, condition, cb) {
 
         const queryString = `
@@ -53,10 +54,7 @@ let orm = {
 
             cb(result);
         });
-
     }
-
-
 }
 
 module.exports = orm;
