@@ -10,7 +10,7 @@ List of technologies and methodologies used: Nodejs, npm, inquirer, Mysql, Expre
 
 ## Description: Burger Logger
 
-This application lets the user enter the names of burgers into a list.  These names represent burgers.  They initially appear on the left hand side of the screen.  The user may "devour" the burger.  The user does this by clicking the "DEVOUR!" button.  After the burger is devoured, the burger appears on the right hand side of the page.
+This application lets the user enter the names of burgers into a list.  These names represent burgers.  They initially appear on the left hand side of the screen.  The user may "devour" the burger.  The user does this by clicking the "DEVOUR!" button.  After the burger is devoured, the burger appears on the right hand side of the page. If the user wishes to delete the burgers that have been devoured, she need only click the "Vomit all burgers" button.
 
 The MVC way of organizing the code was used.  The view consists of Handlebars, HTML, and CSS.  The controller is the next layer down.  It passes information from the view down, eventually, to the object relational model (ORM). However, below the controller lies the model.  The model is a burger.  The burger updates itself via the ORM, then sends information all the way back up to the controller, then up to the view.
 
