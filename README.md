@@ -3,8 +3,8 @@
 ## Link to trying out the app and Screenshots:
 [Try out the Burger Logger](https://intense-wildwood-42940.herokuapp.com/)
 
-![Before Burger Being Devoured](https://github.com/MarioThompson0010/13_Burger_Logger/blob/main/screenshots/screenshot1.PNG)
-![After Burger Being Devoured](https://github.com/MarioThompson0010/13_Burger_Logger/blob/main/screenshots/afterBeingDevoured.PNG)
+![Before Burger Being Vomited](https://github.com/MarioThompson0010/13_Burger_Logger/blob/main/screenshots/screenshot1.PNG)
+![After Burger Being Vomited](https://github.com/MarioThompson0010/13_Burger_Logger/blob/main/screenshots/afterBeingDevoured.PNG)
 
 List of technologies and methodologies used: Nodejs, npm, inquirer, Mysql, Express, Express-Handlebars, Javascript,    HTML, CSS, Bootstrap, Heroku, Github, MVC, REST
 
@@ -27,6 +27,7 @@ You can go to Heroku (see the link, above) and run it that way, or follow the fo
 4) Enter the name of a burger you want to eat
 5) Click the Add Burger button
 6) Devour the burger by clicking the DEVOUR! button
+7) Vomit the burger by clicking "Vomit all burgers"
 
 ## How to test this app
 
