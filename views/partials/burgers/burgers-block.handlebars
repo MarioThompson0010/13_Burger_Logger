@@ -3,6 +3,6 @@
     <li>
         {{!-- we actually do not use data-devour, but it's good to have --}}
         <label data-devour="{{devoured}}"> {{burger_name}}  </input>
-        <button class="devour-burger" data-id="{{this.id}}">DEVOUR{{#if devoured}}ED{{/if}}!</button>
+        <button class="devour-burger {{#if devoured}}btn btn-success{{/if}}" data-id="{{this.id}}">DEVOUR{{#if devoured}}ED{{/if}}!</button>
     </li>
 </div>

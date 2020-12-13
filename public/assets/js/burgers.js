@@ -32,19 +32,32 @@ $(function () {
         const id = $(this).data("id");
         // devoured!
         const devour = 1; //1 for true
-    
+
         // pareters to pass to back-end
         const consumed = {
-            devoured : devour
+            devoured: devour
         };
 
         //call back end with id in parameters and data in the body
         $.ajax("/api/burgers/" + id, {
             type: "PUT",
             data: consumed
-        }).then( (result) => {
+        }).then((result) => {
             console.log(result);
             location.reload();
         });
     });
+
+    $("#vomitBurger").on("click", function (event) {
+        event.preventDefault();
+        $.ajax("/api/vomit",
+            {
+                type: "DELETE"
+            }
+        ).then((result) => {
+            console.log(result);
+            location.reload();
+        })
+
+    })
 });

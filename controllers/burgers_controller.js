@@ -28,13 +28,20 @@ router.put("/api/burgers/:id", function (req, res) {
     const id = req.params.id;
     const data = req.body.devoured;
     const cols = {
-         idParm: "id", 
-         devourParm: "devoured" 
+        idParm: "id",
+        devourParm: "devoured"
     };
 
     burger.update(cols, [data, id], (result) => {
-            res.json({ id: result.affectedRows });
-        })
+        res.json({ id: result.affectedRows });
+    })
+});
+
+//vomit burgers
+router.delete("/api/vomit", function (req, res) {
+    burger.vomit((result) => {
+        res.json(result);
+    });
 });
 
 module.exports = router;

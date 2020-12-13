@@ -17,6 +17,11 @@ let burger = {
         orm.updateOne("burgers", objColVals, condition, (result) => {
             cb(result);
         });
+    },
+    vomit: function(cb){
+        orm.vomitAll("burgers", (result) => {
+            cb(result);
+        });
     }
 
 };

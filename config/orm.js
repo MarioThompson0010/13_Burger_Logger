@@ -54,7 +54,28 @@ let orm = {
 
             cb(result);
         });
+    },
+
+    vomitAll: function (table, cb) {
+        var queryString = `
+        
+                
+        DELETE FROM
+        ${table}
+        WHERE devoured = 1
+
+        `;
+
+        connection.query(queryString, function (err, result) {
+            if (err) {
+                throw err;
+            }
+
+            cb(result);
+        });
     }
+
+
 }
 
 module.exports = orm;
